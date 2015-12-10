@@ -1,0 +1,25 @@
+{
+  "name": "express-refactor",
+  "version": "1.0.0",
+  "description": "An assignment about a friggin cat singing",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisrochadev/express-refactor.git"
+  },
+  "author": "Luis Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisrochadev/express-refactor/issues"
+  },
+  "homepage": "https://github.com/luisrochadev/express-refactor#readme"
+}

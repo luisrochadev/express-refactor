@@ -12,14 +12,14 @@ song = {
 }
 
 app.get('/', function(req, res) {
-  res.render('index');
+  res.render('views/index');
 });
 
-app.get('/song/edit', function(req, res) {
-  res.render('edit');
+app.get('/views/song/edit', function(req, res) {
+  res.render('views/edit');
 });
 
-app.get('/song/update', function(req, res) {
+app.get('/views/song/update', function(req, res) {
   if (req.query.verse1 !== undefined) {
     song.verse1 = req.query.verse1;
     song.verse2 = req.query.verse2;
@@ -28,24 +28,24 @@ app.get('/song/update', function(req, res) {
   res.redirect('/');
 })
 
-app.get('/song/1', function(req, res) {
-  res.render('song', {
+app.get('/views/song/1', function(req, res) {
+  res.render('views/song', {
     pageInfo: song.verse1,
     nextPage: '1/2',
   });
 });
 
-app.get('/song/1/2', function(req, res) {
-  res.render('song', {
+app.get('/views/song/1/2', function(req, res) {
+  res.render('views/song', {
     pageInfo: song.verse2,
     nextPage: '2/3',
   });
 });
 
-app.get('/song/1/2/3', function(req, res) {
-  res.render('song', {
+app.get('/views/song/1/2/3', function(req, res) {
+  res.render('views/song', {
     pageInfo: song.verse3,
-    nextPage: '/song/1',
+    nextPage: '/views/song/1',
   });
 });
 

@@ -4,7 +4,7 @@ window.onload = function(){
 
   var verse = document.querySelector('h1');
 
-  if (window.location.pathname === '/song/1' && currentData.verse1 !== "") {
+  if (window.location.pathname === '/../views/song/1' && currentData.verse1 !== "") {
     verse.innerText = currentData.verse1;
   }
 
